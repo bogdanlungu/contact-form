@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact {
+  width: 100%;
+  max-width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.contact-header,
+.contact p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.contact p {
+  padding: 12px;
+  padding-top: 5px;
+}
+
+.contact .error{
+  font-size: 0.9em;
+  color: red;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.contact .show{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.contact input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.contact textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.contact input[type="email"],
+.contact input[type="text"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.contact input[type="email"]:focus,
+.contact input[type="text"]:focus {
+  border-color: #888;
+}
+
+.contact input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.contact input[type="submit"]:focus {
+  border-color: #05a;
+}

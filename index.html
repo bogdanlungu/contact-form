@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=0,width=device-width,height=device-height,initial-scale=1,maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="contact">
+
+            <h2 class="contact-header">Contact form</h2>
+
+            <form class="contact-container">
+                <p>
+                    <input type="text" placeholder="Name" class="name validate">
+                    <span class="error" data-contact="name">Please complete this field with your name!</span>
+                </p>
+                <p>
+                    <input type="email" placeholder="Email" class="email validate">
+                    <span class="error" data-contact="email">Please complete this field with a valid email address!</span>
+                </p>
+                <p>
+                    <textarea placeholder="Message" class="message validate" rows="6"></textarea>
+                    <span class="error" data-contact="message">The message need to have at least 10 characters.</span>
+                </p>
+                <p>
+                    <input type="submit" class="send" value="Send message">
+                </p>
+            </form>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
