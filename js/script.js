@@ -32,7 +32,7 @@ $(window).load(function() {
 
         if (error == 0) {
             console.log("The message has been sent!");
-            $.post("contact.php", function(data, status) {
+            $.post("contact.php", {name: validateObj.email, email: validateObj.email, message: validateObj.message}, function(data, status) {
                 alert("Data: " + data + "\nStatus: " + status);
             });
         }
