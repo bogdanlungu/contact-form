@@ -7,13 +7,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		$message = $_POST['message'];
 
 		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          $error = 0;
-        } else {
-          $error = 1;
-        }
+      $error = 0;
+    } else {
+      $error = 1;
+    }
 
 		if($error == 0){
-			$to      = 'your_email@domain.com';
+			$to = 'your_email@domain.com';
       $subject = 'Email from your website';
       $message = $message;
       $headers = 'From:'.$email . "\r\n" .
